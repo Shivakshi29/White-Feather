@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top-head
+		{
+		background-color:#00A8A8;
+		height:5.5vw;
+		width:99vw;
+		padding:0px;
+		position:fixed;
+		top:0px;
+		left:0px;
+		}
+#search_box{
+			position:absolute;
+			left:40vw;
+			top:2vw;
+			height:2vw;
+			width:25vw;	
+	border:0.15vw solid #FFF;
+			}
+#search_box:hover{width:25vw;}	
+
+#search_box:hover #search_button {
+  visibility:visible;
+}		
+			
+#search_button
+			{
+			position:absolute;
+			left:65vw;
+			top:2vw;
+			height:2vw;
+			width:6vw;
+			visibility:visible;
+			background-color:#00A8A8;
+			color:#FFF;font-size:1.5vw;
+			border:0.15vw solid #FFF;
+			}
+
+
+#white-feather{color:#FFF;
+font-family:Georgia, "Times New Roman", Times, serif;
+			position:absolute;
+				top:1.6vw;
+				left:8vw;
+				font-size:2.5vw;
+				text-decoration:none;
+				}
+#white-feather:HOVER{color:#0F0000}				
+
+#login{position:absolute;top:30%;
+		left:80vw;
+		color:#FFF;
+		font-size:2vw;
+		font-family:Calibri;
+		text-decoration:none;
+		transition:0.4s
+		}
+#login:hover{color:#0F0000;}
+
+#cart{position:absolute;left:73vw;top:1vw;height:4vw;transition:0.4s}
+
+#cart:hover{height:4.5vw;}
+
+#menu-icon{height:2vw;position:fixed;top:1.8vw;left:2vw;transition:0.4s;width:3vw;border:0px}
+
+#menu-icon:hover{height:2.5vw;width:3.5vw}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  	width:99vw;
+	height: 8vw;
+	background-color:#bfbfbf ;
+	position:absolute;top:6vw;left:0vw;
+  	color:#fff;
+  	transition:0.5s;
+  
+}
+
+.navbar a {
+  float: left;
+  padding: 1vw;
+  color: #fff;
+  text-decoration: none;
+  font-size:2vw;
+  transition:0.5s;
+}
+
+
+  
+/*Hardik's Code*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#nav-head{height: 7vw;
+	background-color:#00A8A8;
+	
+	
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#FFF;
+  overflow-x: hidden;
+  transition: 0.3s;
+ 
+}
+
+.sidenav a {
+  padding:1vw 1vw 1vw 1vw;
+  text-decoration: none;
+  font-size:1.5vw;
+  color: #000;
+  display: block;
+}
+
+.sidenav a:hover {
+  color:#FFF;
+  background-color:#111;
+  transition: 0.3s;
+  }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1vw;
+  font-size: 3vw;
+  margin-left: 7vw;
+}
+
+
+#navbar {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 3vw;}
+  .sidenav a {font-size: 4vw;}
+}
+	.footer {
+   position: fixed;
+   height:50px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#DCDCDC;
+   color: white;
+   text-align: center;
+}
+
+#dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top:7.7vw;
+  left:5vw;
+  width:12vw;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+#dropdown-content-1 {position:absolute;left:2vw;}
+#dropdown-content-2 {position: absolute;left:14vw;width:10vw;}
+#dropdown-content-3 {position: absolute;left:26vw;width:17vw;}
+#dropdown-content-4 {position: absolute;left:47vw;width:8vw;}
+#dropdown-content-5 {position: absolute;left:59vw;width:10vw;}
+#dropdown-content-6 {position: absolute;left:72vw;width:10vw;}
+
+
+
+.dropdown-content a {
+  float: none;
+  font-size:1vw;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+
+#dropdown:hover .dropdown-content {
+  display: block;
+}
+#dropdown {
+  float: left;
+  padding: 1vw;
+  color: #fff;
+  text-decoration: none;
+  font-size:2vw;
+  width:12vw;
+  transition:0.5s;
+}
+
+#dropdown:hover {
+  color: #000;
+  
+  color:#FFF
+  }
+
+#img{height:10vw;position:absolute;left:12vw;top:0vw;visibility:hidden}
+
+#img_1{height:10vw;position:absolute;left:12vw;top:0vw;visibility:hidden;width:20vw}
+
+#img_2{height:10vw;position:absolute;left:12vw;top:0vw;visibility:hidden;width:19vw}
+
+#img_3{height:10vw;position:absolute;left:12vw;top:0vw;visibility:hidden;width:21vw}
+
+#img_4{height:10vw;position:absolute;left:12vw;top:0vw;visibility:hidden;width:21vw}
+
+#img_5{height:10vw;position:absolute;left:12vw;top:0vw;visibility:hidden;width:21vw} 

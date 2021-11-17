@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Details</title>
+<link rel="stylesheet" type="text/css" media="all" href="../details.css" />
+
+</head>
+
+<body>
+<div id="d1">
+<div id="titles">Details</div>
+<div id="p1"><a href="f1d1p.html">
+<img id="imgs"src="../denim_pics/1.jpg" /></a>
+<div id="pname">Product Name: Blue Jacket</div>
+<div id="pid">Product ID: <span id="proid">F1D1</span></div>
+<div id="pid">Product Detail: Plain blue jacket 100% pure denim</div>
+<div id="pid">Product Color: Blue</div>
+<div id="stock">In-stock: Available</div>
+<div id="pid">Price: Rs. 699</div><br>
+<input type="button" value="Add to cart" onclick="addToCart()" id="bcart"/>
+<input type="button" value="Add to Wishlist" onclick="" id="bcart2"/>
+</div>
+<div id="titles" style="margin-top:-35.2%; margin-left:75%; font-size:2vw;">Recommended</div>
+<div id="d2"><a href="f1d3p.html">
+<div id="p2"><center>
+<img id="imgr" src="../denim_pics/3.jpeg"/></center>
+<div id="pnamer">Light Blue Jacket</div>
+<div id="stockr" >Available</div>
+<div id="pricer">Rs. 749</div>
+<input type="button" value="Add to cart" onclick="" id="bcartr" />
+</div></a><a href="f1d2.html">
+<div id="p3"><center>
+<img id="imgr" src="../denim_pics/2.jpg"/></center>
+<div id="pnamer">Blue Denim Jacket</div>
+<div id="stockr" >Available</div>
+<div id="pricer">Rs. <strike> 899</strike> 600</div>
+<input type="button" value="Add to cart" onclick="" id="bcartr" />
+</div></a>
+</div>
+</div>
+<script>
+function addToCart(){
+if(typeof(Storage)!=undefined)
+{
+	if(localStorage.count)
+	{
+			localStorage.count=Number(localStorage.count)+1;
+			var pid=document.getElementById("proid").value
+			localStorage.setItem("pid",pid)
+	}
+	else{
+		localStorage.count=1
+	}
+	alert("HI")
+}
+else
+{
+	alert("Browser does not support")	
+}
+	
+}
+
+
+</script>
+</body>
+</html>

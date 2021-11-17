@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="homepagebody.css" type="text/css" />
+</head>
+
+<body style="position:absolute;top:15vw">
+<DIV >
+<center><img src="home/HEAD2.jpg" id="head"/></center>
+</DIV>
+
+<div>
+<table >
+	<!--<tr>
+   	  <td>
+        <h1><pre>Personal and Healthcare
+Appliances</pre></h1>
+        </td>
+      <td>
+        <h1><pre>Mobile and
+Tablets</pre></h1>
+        </td>
+      <td>
+        <h1><pre>Home Appliances</pre></h1>
+        </td>
+    </tr>-->
+    
+    <tr>
+   	  <td>
+      <a href="#"> <h1><pre>Personal and Healthcare
+Appliances</pre></h1>
+        <img src="home/home6.jpg"  id="img"/></a>
+        </td>
+      <td>
+      <a href="#"><h1><pre>Mobile and
+Tablets</pre></h1>
+        <img src="home/home4.jpg"  id="img" class="imgb"/></a>
+        </td>
+      <td>
+      <a href="#"><h1><pre>Home Appliances</pre></h1>
+        <br /><br />
+       <img src="home/home1.jpg" id="img" class="imgb"/>
+        </td></a>
+    </tr>
+    
+    <tr>
+   	  <td colspan="2">
+        <div id="slideshow">
+       <!-- <img src="home/1stoff.jpg"  class="slides" width="95%" />-->
+    <img src="home/2ndoff.jpg"  class="slides" width="95%"/>
+    <img src="home/3rd off.jpg"  class="slides" width="95%"/>
+    <!--<img src="home/4th off.jpg"  class="slides" width="95%"/>-->
+    <img src="home/5th off.jpg"  class="slides" width="95%"/>
+    <!--<img src="home/6th off.jpg"  class="slides" width="95%"/>-->
+     <button class="btn" id="btn1" onclick="plusIndex(-1)">&#10094;</button>
+    <button class="btn" id="btn2" onclick="plusIndex(1)">&#10095;</button>
+       </div>
+       
+        </td>
+        <td>
+        	<img src="home/winter.jpg" width="88%" style="position:relative;bottom:1.5vw" />
+        </td>
+    </tr>
+
+<!--<tr>
+    	<td>
+        <h2>sgsd</h2>
+        </td>
+        <td>
+        <h2>sgsd</h2>
+        </td>
+        <td>
+        <h2>sgsd</h2>
+        </td>
+    </tr>
+    -->
+    <tr>
+    	<td>
+        <a href="#"><h1><pre>Smart Variables and
+Home Automation</pre></h1>
+        <img src="home/hom3.jpg" id="img"/></a>
+        </td>
+        <td>
+        <a href="#"><h1><pre>Desktops PC's and
+LaptopsS</pre></h1>
+              <img src="home/home5.jpg"  id="img" class="imgb"/></a>
+  </td>
+        <td>
+        <a href="#"><h1><pre>Speakers and
+Cameras</pre></h1>
+       <img src="home/speakcam.jpg" id="img"/></a>
+        </td>
+    </tr>
+    
+    <tr>
+    	
+        <td>
+       		<img src="home/cam.jpg" width="95%" style="position:relative;bottom:1.2vw" />
+        </td>
+       <td colspan="2">
+        <div id="slideshow">
+        <img src="home/1stoff.jpg"  class="slides1" width="95%" />
+    <!--<img src="home/2ndoff.jpg"  class="slides1" width="95%"/>
+    <img src="home/3rd off.jpg"  class="slides1" width="95%"/-->>
+    <img src="home/4th off.jpg"  class="slides1" width="95%"/>
+    <!--<img src="home/5th off.jpg"  class="slides1" width="95%"/>-->
+    <img src="home/6th off.jpg"  class="slides1" width="95%"/>
+     <button class="btn" id="btn11" onclick="plusIndex1(-1)">&#10094;</button>
+    <button class="btn" id="btn22" onclick="plusIndex1(1)">&#10095;</button>
+       </div>
+       
+        </td>
+        
+        
+        
+    </tr>
+</table>
+
+</div>
+
+</body>
+
+<script>
+
+	var index=1;
+	
+	function plusIndex(n){
+		index = index+n;
+		showImage(index);
+	}
+	
+	showImage(1);
+	
+	
+	function showImage(n){
+		var i;
+		var x = document.getElementsByClassName("slides");
+		if(n>x.length){index=1};
+		if(n<1){index=x.length};
+		for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+			
+		}
+		x[index-1].style.display="block";
+		
+	}
+	autoSlide();
+	
+	function autoSlide(){
+			var i;
+			var x = document.getElementsByClassName("slides");
+			for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+			
+		}
+		if(index>x.length){index=1}
+		x[index-1].style.display="block";
+		index++;
+		setTimeout(autoSlide,3000);
+		
+		
+	}
+	
+	
+var index1=1;
+	
+	function plusIndex1(n){
+		index1 = index1+n;
+		showImage1(index1);
+	}
+	
+	showImage1(1);
+	
+	
+	function showImage1(n){
+		var i;
+		var x = document.getElementsByClassName("slides1");
+		if(n>x.length){index1=1};
+		if(n<1){index1=x.length};
+		for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+			
+		}
+		x[index1-1].style.display="block";
+		
+	}
+	autoSlide1();
+	
+	function autoSlide1(){
+			var i;
+			var x = document.getElementsByClassName("slides1");
+			for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+			
+		}
+		if(index1>x.length){index1=1}
+		x[index1-1].style.display="block";
+		index1++;
+		setTimeout(autoSlide1,3000);
+		
+		
+	}
+	
+	
+</script>
+</html>

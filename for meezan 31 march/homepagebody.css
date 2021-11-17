@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* CSS Document */
+body{font-family:Arial, Helvetica, sans-serif; font-size:18px}
+
+#head{width:95vw;
+height:5vw;}
+
+table{text-align:center;
+}
+table tr td{padding-left:5vw;
+padding-bottom:5vw}
+
+table tr td #img{border-radius:10%;
+border:2px solid #999}
+
+.imgb{border:2px solid #999}
+
+table tr td #img:hover{width:25vw}
+
+a{text-decoration:none;
+color:#000;}
+
+a:hover{color:#06F}
+
+#slideshow>.btn{
+	position:relative;
+	right:20vw;
+	
+	bottom:14vw;
+	width:3vw;
+	height:3vw;
+	border:none;
+	border-radius:2vw;
+	background:#000;
+	color:#FFF;
+	font-size:2vw;
+	
+			
+}
+#slideshow>#btn2{
+		position:relative;
+		/*float:right;*/
+		left:23.5vw;
+}
+#slideshow>#btn1{
+		position:relative;
+		/*float:right;*/
+		right:26.5vw
+}
+
+
+#slideshow>#btn2:hover{
+	box-shadow:-10px 0px 20px 0px #000000;
+
+}
+			
+#slideshow>#btn1:hover{
+	box-shadow:10px 0px 20px 0px #000000;
+
+}			
+
+#slideshow>#btn22{
+		position:relative;
+		/*float:right;*/
+		left:24.2vw;
+}
+#slideshow>#btn11{
+		position:relative;
+		/*float:right;*/
+		right:27.5vw
+}
+
+
+#slideshow>#btn22:hover{
+	box-shadow:-10px 0px 20px 0px #000000;
+
+}
+			
+#slideshow>#btn11:hover{
+	box-shadow:10px 0px 20px 0px #000000;
+
+}			

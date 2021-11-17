@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+#d1{
+	width:98vw;
+	height:26.5vw;
+	margin-left:-1vw;
+	margin-top:14vw;
+	}
+#d{
+	float:left;
+	display:inline;
+	padding:0.1vw;}
+#d2{
+	width:95.1vw;
+	height:30.5vw;
+	}
+
+#d3{
+	width:95.3vw;
+	height:26vw;
+}
+#d3:hover{box-shadow:0 0.2vw 0.6vw #333333; }
+.slider{
+	width:95.3vw;
+	height:26vw;
+	display:none;
+	}
+	
+#d4{
+	width:95.1vw;
+	height:29vw;
+	margin-bottom:1vw;
+	}
+#d4:hover{box-shadow:0 0.2vw 0.6vw #333333; }
+
+#imgs{
+	width:18vw;
+	height:22vw;
+	margin-left:1.1vw;
+	}
+#imgdiv{
+	width:18vw;
+	height:3.8vw;
+	text-align:center;
+	margin-left:1.1vw;
+	margin-top:-4vw;
+	font-size:2vw;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color:#FFF;
+	position:absolute;
+	display:none;
+	}
+#imgs:hover+#imgdiv{box-shadow:0 0.2vw 0.6vw #333333;display:block; opacity:0.8; }
+#imgdiv:hover{box-shadow:0 0.2vw 0.6vw #333333;display:block; opacity:0.8; }
+
+#cate{
+	width:31vw;
+	height:29.5vw;}
+#cate:hover{box-shadow:0 0.2vw 0.6vw #333333; }
+#denim{
+	width:95.1vw;
+	height:29vw;
+	
+	}

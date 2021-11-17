@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+#d1{
+	width:98vw;
+	height:70vw;
+	margin-left:-0.5vw;
+	padding:0.8vw;
+	background-image:url(../../html/box-bg.png);
+	margin-top:14vw;
+	}
+#titles{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:2vw;
+	margin-left:25%;
+	}
+
+#imgs{
+	width:20vw;
+	height:30vw;
+	}
+#p1{
+	padding:1.4vw;
+	width:53%;
+	height:42%;
+	background-color:#FFF; 
+}
+
+#pname{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:1.5vw;
+	margin-left:23vw;
+	margin-top:-30vw;
+	}
+#pid{
+	margin-left:23vw;
+	font-size:1.5vw;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}	
+
+#stock{
+	font-size:1.2vw;
+	color:#666;
+	margin-left:23vw;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+#price{
+	font-size:1.7vw;
+	margin-left:23vw;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+#bcart{
+	height:10%;
+	width:22%;
+	background-color:#069;
+	color:#FFF;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:none;
+	border-radius:1vw;
+	font-size:1.2vw;
+	margin-left:23vw;
+	}
+#bcart:hover{
+	background-color:#FFF;
+	color:#069;
+	border:1px solid #069;
+	}
+#bcart2{
+	height:3vw;
+	width:12%;
+	background-color:#FFF;
+	color:#069;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+	border:1px solid #069;
+	border-radius:1vw;
+	font-size:1.2vw;
+	margin-left:3.7vw;
+	position:absolute;
+	}
+#bcart2:hover{
+	background-color:#069;
+	color:#FFF;
+	border:none;
+	}
+#d2{
+	margin-left:57%;
+	padding:1.1vw;
+	width:40.5%;
+	height:43%;
+	background-color:#FFF; 
+}
+#p2{
+	background-color:#FFF;
+	padding:1.2vw;
+	border-radius:1vw;
+	width:17vw;
+	height:27vw; 
+}
+#p2:hover{
+		box-shadow:0 2px 8px #333333;
+}
+#pnamer{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:1.5vw;
+	}
+#stockr{
+	font-size:1vw;
+	color:#666;
+	}
+#pricer{
+	font-size:1.5vw;
+	}
+#bcartr{
+	height:2.5vw;
+	width:9vw;
+	background-color:#069;
+	color:#FFF;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:none;
+	border-radius:1vw;
+	font-size:1.2vw;
+	}
+#bcartr:hover{
+	background-color:#FFF;
+	color:#069;
+	border:1px solid #069;}	
+#p3{
+	margin-left:21vw;
+	margin-top:-29.5vw;
+	padding:1.2vw;
+	border-radius:1vw;
+	width:17vw;
+	height:27vw; 
+	background-color:#FFF;
+}
+#p3:hover{
+		box-shadow:0 2px 8px #333333;
+}
+#imgr{
+	width:17vw;
+	height:20vw;}
+a{
+	text-decoration:none;
+	color:#000;}

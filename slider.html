@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+#slideshow>.btn{
+	position:relative;
+	right:20vw;
+	
+	bottom:17vw;
+	width:3vw;
+	height:3vw;
+	border:none;
+	border-radius:2vw;
+	background:#000;
+	color:#FFF;
+	font-size:2vw;
+	
+			
+}
+#slideshow>#btn2{
+		position:relative;
+		/*float:right;*/
+		left:34vw;
+}
+#slideshow>#btn1{
+		position:relative;
+		/*float:right;*/
+		right:34vw
+}
+
+
+#slideshow>#btn2:hover{
+	box-shadow:-10px 0px 20px 0px #000000;
+
+}
+			
+#slideshow>#btn1:hover{
+	box-shadow:10px 0px 20px 0px #000000;
+
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+</body>
+
+
+<center>
+        <div id="slideshow">
+        <img src="home/1stoff.jpg"  class="slides" width="85%"/>
+    <img src="home/2ndoff.jpg"  class="slides" width="85%"/>
+    <img src="home/3rd off.jpg"  class="slides" width="85%"/>
+    <img src="home/4th off.jpg"  class="slides" width="85%"/>
+    <img src="home/5th off.jpg"  class="slides" width="85%"/>
+    <img src="home/6th off.jpg"  class="slides" width="85%"/>
+     <button class="btn" id="btn1" onclick="plusIndex(-1)">&#10094;</button>
+    <button class="btn" id="btn2" onclick="plusIndex(1)">&#10095;</button>
+       </div>
+       
+        </center>
+
+
+
+
+<script>
+var index=1;
+	
+	function plusIndex(n){
+		index = index+n;
+		showImage(index);
+	}
+	
+	showImage(1);
+	
+	
+	function showImage(n){
+		var i;
+		var x = document.getElementsByClassName("slides");
+		if(n>x.length){index=1};
+		if(n<1){index=x.length};
+		for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+			
+		}
+		x[index-1].style.display="block";
+		
+	}
+	autoSlide();
+	
+	function autoSlide(){
+			var i;
+			var x = document.getElementsByClassName("slides");
+			for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+			
+		}
+		if(index>x.length){index=1}
+		x[index-1].style.display="block";
+		index++;
+		setTimeout(autoSlide,2000);
+		
+		
+	}
+</script>	
+</html>

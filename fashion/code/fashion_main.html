@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE9"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" media="all" href="maincss.css"/>
+<title>FASHION</title>
+</head>
+
+<body>
+<div id="d1"><center>
+<div style="font-size:3vw; font-family:"Castellar">FASHION</div>
+</center>
+<div id="d">
+<a href="fashion_denim/fashion_denim.html">
+<img id="imgs" src="denim_pics/4.jpg"/>
+<div id="imgdiv" >Denim</div>
+</a></div>
+<div id="d">
+<a href="fashion_men/fashion_men.html">
+<img id="imgs"src="../pics/men/2.jpeg" />
+<div id="imgdiv" >Men</div>
+</a></div>
+<div id="d">
+<a href="">
+<img id="imgs"src="../pics/children/1.jpeg" />
+<div id="imgdiv" >Offers</div>
+</a></div>
+<div id="d">
+<a href="fashion_women/fashion_women.html">
+<img id="imgs"src="../pics/women/7.jpeg" />
+<div id="imgdiv" >Women</div>
+</a></div>
+<div id="d">
+<a href="fashion_kids/fashion_kids.html">
+<img id="imgs"src="../temp_kids_pics/5.jpg" />
+<div id="imgdiv" >Kids</div>
+</a>
+</div></div>
+
+
+<a href=""><div id="d3">
+<img class="slider" src="30% OFF ON WOMEANS CLOTHING.jpg" >
+<img class="slider" src="BEST OFFERS ONLU AT WHITE FEATHER.jpg" >
+<img class="slider" src="MENS FORMAL.jpg" >
+<img class="slider" src="SEASON SALE 40% OFF.jpg" >
+
+</div></a>
+<script>
+var index = 0;
+sli();
+
+function sli() {
+  var i;
+  var x = document.getElementsByClassName("slider");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  index++;
+  if (index > x.length) {
+	  index = 1
+	  } 
+  x[index-1].style.display = "block"; 
+  setTimeout(sli, 2000);
+}
+</script>
+
+
+<div id="d2" style="padding-top:1vw">
+<a href="fashion_women/fashion_women.html">
+<img id="cate" src="WOMEN1.jpg"/></a>
+<a href="fashion_men/fashion_men.html">
+<img id="cate" src="MEN1.jpg" style="position:absolute;	margin-left:0.8vw;"/></a>
+<a href="fashion_kids/fashion_kids.html">
+<img id="cate" src="KIDS.jpg" style="position:absolute;	margin-left:33vw;"/></a>
+</div>
+<div id="d4"><a href="fashion_denim/fashion_denim.html">
+<img id="denim"src="DENIM COLLAGE.jpg"/></a>
+</div>
+<div id="d4" ><a href="fashion_kids/fashion_kids.html">
+<img src="../pics/7.jpg" id="denim"/></a>
+</div><br />
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<canvas id="can" height="500" width="500" style="border:2px #0033FF double"></canvas>
+<script>
+var c=document.getElementById("can");
+var ct=c.getContext("2d");
+ct.strokeStyle="blue"
+ct.strokeRect(100,100,200,250)
+//ct.fillStyle="cyan"
+var grd=ct.createLinearGradient(0,0,170,0)
+grd.addColorStop(0,"blue")
+grd.addColorStop(0.5,"cyan")
+grd.addColorStop(1,"white")
+
+ct.fillStyle=grd
+ct.fillRect(20,20,150,100)
+/*
+ct.arc(120,120,100,0,2*Math.PI)
+ct.fillStyle="rgb(122,20,160)"
+ct.fill()
+ct.stroke()
+ct.font="30px Arial"
+ct.fillText("Hello Friends",100,350)
+ct.strokeText("hello Friends",100,450)*/
+</script>
+</body>
+</html>

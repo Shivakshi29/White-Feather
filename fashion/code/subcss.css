@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+body{	background-image:url(../../html/box-bg.png);}
+#d1{
+	width:97.5vw;
+	height:25vw;
+	box-shadow:0 0.3vw 0.8vw #333333;
+	margin-top:14vw;
+	}
+#d2{
+	width:97.5vw;
+	height:33vw;
+
+	}
+#titles{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:2.2vw;
+	text-align:center;
+	height:3.5vw;
+	}
+
+#imgs{
+	width:18vw;
+	height:18vw;
+	}
+#p1{
+	padding:1.1vw;
+	border-radius:1vw;
+	width:18vw;
+	height:25vw;
+	background-color:#FFF;
+	margin-left:1.2vw;
+	position:absolute;
+}
+#p1:hover{
+		box-shadow:0 0.3vw 0.8vw #333333;
+
+	}
+
+#p2{
+	background-color:#FFF;
+	margin-left:25.5vw;
+	margin-top:0.1vw;	
+	padding:1.1vw;
+	border-radius:1vw;
+	width:18vw;
+	height:25vw; 
+	position:absolute;
+
+}
+#p2:hover{
+		box-shadow:0 2px 8px #333333;
+}
+#p3{
+	margin-left:50vw;
+	margin-top:0.1vw;
+	padding:1.1vw;
+	border-radius:1vw;
+	width:18vw;
+	height:25vw; 
+	background-color:#FFF;
+		position:absolute;
+}
+#p3:hover{
+box-shadow:0 0.3vw 0.8vw #333333;
+}
+#p4{
+	margin-left:74.5vw;
+	margin-top:0.1vw;
+	padding:1.1vw;
+	border-radius:1vw;
+	width:18vw;
+	height:25vw; 
+	background-color:#FFF;
+}
+#p4:hover{
+box-shadow:0 0.3vw 0.8vw #333333;}
+
+a{
+	text-decoration:none;
+	color:#000;}
+#pname{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:1.5vw;
+	}
+#stock{
+	font-size:1vw;
+	color:#666;
+	}
+#price{
+	font-size:1.5vw;
+	}
+#bcart{
+	height:2.5vw;
+	width:9vw;
+	background-color:#069;
+	color:#FFF;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:none;
+	border-radius:10px;
+	font-size:1.2vw;
+	}
+#bcart:hover{
+	background-color:#FFF;
+	color:#069;
+	border:1px solid #069;}	

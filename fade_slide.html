@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+#d3{
+	width:95.3vw;
+	height:26vw;
+}
+#d3:hover{box-shadow:0 0.2vw 0.6vw #333333; }
+.slider{
+	width:95.3vw;
+	height:26vw;
+	display:none;
+	}
+
+</style>
+
+</head>
+
+
+
+<a href=""><div id="d3">
+<img class="slider" src="images/15.jpg" >
+<img class="slider" src="images/16.jpg" >
+<img class="slider" src="images/17.jpg" >
+<img class="slider" src="images/18.jpg" >
+
+</div></a>
+<script>
+var index = 0;
+sli();
+
+function sli() {
+  var i;
+  var x = document.getElementsByClassName("slider");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  index++;
+  if (index > x.length) {
+	  index = 1
+	  } 
+  x[index-1].style.display = "block"; 
+  setTimeout(sli, 2000);
+}
+</script>
+
+
+<body>
+</body>
+</html>
